@@ -85,7 +85,7 @@ Sample queries include:
 LIMIT </span><span>10</span><span>;
 </span></span></code></div></div></pre>
 
-* **Monthly Sales TrendN**
+* **Monthly Sales Trend**
 
 <pre class="overflow-visible!" data-start="2592" data-end="2753"><div class="contain-inline-size rounded-2xl relative bg-token-sidebar-surface-primary"><div class="sticky top-9"><div class="absolute end-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-bg-elevated-secondary text-token-text-secondary flex items-center gap-4 rounded-sm px-2 font-sans text-xs"></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-sql"><span><span>SELECT</span><span> DATE_FORMAT(InvoiceDate, </span><span>'%Y-%m'</span><span>) </span><span>AS</span><span></span><span>Month</span><span>,
        </span><span>SUM</span><span>(Quantity </span><span>*</span><span> UnitPrice) </span><span>AS</span><span> Revenue
